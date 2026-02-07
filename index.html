@@ -21,7 +21,13 @@
     .id{flex:1; min-width:0;}
     .name{font-size:24px; font-weight:700; margin:0 0 6px;}
     .name_en{font-size:18px; font-weight:600; margin:0; direction:ltr; text-align:left;}
-    .sub{margin:10px 0 0; color:var(--muted); font-size:15px;}
+    ..sub{
+  margin:10px 0 0;
+  color:var(--muted);
+  font-size:15px;
+  white-space: nowrap;
+}
+
     .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px;}
     @media (min-width:520px){ .grid{grid-template-columns:1fr 1fr;} }
     a.btn{display:flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; padding:14px 14px; border-radius:var(--radius); border:1px solid var(--btn); background:var(--btn); color:var(--btnfg); font-weight:700;}
