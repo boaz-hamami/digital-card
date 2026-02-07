@@ -30,6 +30,11 @@
 
     .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px;}
     @media (min-width:520px){ .grid{grid-template-columns:1fr 1fr;} }
+@media (max-width:520px){
+  .name{
+    font-size:21px;
+  }
+}
     a.btn{display:flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; padding:14px 14px; border-radius:var(--radius); border:1px solid var(--btn); background:var(--btn); color:var(--btnfg); font-weight:700;}
     a.btn.secondary{background:var(--btn2); color:var(--btn2fg); border-color:var(--line);}
     .row{border-top:1px solid var(--line); margin-top:18px; padding-top:18px;}
