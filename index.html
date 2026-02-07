@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>בועז חממי | עורך דין</title>
+  <style>
+    :root {
+      --fg:#111; --muted:#555; --line:#e6e6e6; --bg:#fff;
+      --btn:#111; --btnfg:#fff; --btn2:#fff; --btn2fg:#111;
+      --radius:18px;
+      font-synthesis-weight:none;
+    }
+    *{box-sizing:border-box}
+    body{margin:0; background:var(--bg); color:var(--fg); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,"Noto Sans Hebrew","Heebo",sans-serif;}
+    .wrap{max-width:720px; margin:0 auto; padding:28px 18px 40px;}
+    .card{border:1px solid var(--line); border-radius:24px; padding:22px;}
+    .top{display:flex; gap:18px; align-items:center; justify-content:space-between;}
+    .logo{width:84px; height:84px; display:flex; align-items:center; justify-content:center; border:1px solid var(--line); border-radius:22px; overflow:hidden;}
+    .logo img{width:100%; height:100%; object-fit:contain;}
+    .id{flex:1; min-width:0;}
+    .name{font-size:24px; font-weight:700; margin:0 0 6px;}
+    .name_en{font-size:18px; font-weight:600; margin:0; direction:ltr; text-align:left;}
+    .sub{margin:10px 0 0; color:var(--muted); font-size:15px;}
+    .grid{display:grid; grid-template-columns:1fr; gap:12px; margin-top:18px;}
+    @media (min-width:520px){ .grid{grid-template-columns:1fr 1fr;} }
+    a.btn{display:flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; padding:14px 14px; border-radius:var(--radius); border:1px solid var(--btn); background:var(--btn); color:var(--btnfg); font-weight:700;}
+    a.btn.secondary{background:var(--btn2); color:var(--btn2fg); border-color:var(--line);}
+    .row{border-top:1px solid var(--line); margin-top:18px; padding-top:18px;}
+    .label{font-size:13px; color:var(--muted); margin:0 0 6px;}
+    .value{margin:0; font-size:16px; line-height:1.5}
+    .value .ltr{direction:ltr; unicode-bidi:bidi-override;}
+    .footer{margin-top:18px; color:#777; font-size:12px; text-align:center;}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <div class="top">
+        <div class="logo" aria-label="BH">
+          <!-- החלף לקובץ הלוגו שלך בשם logo.png באותה תיקייה -->
+          <img src="logo.png" alt="BH"/>
+        </div>
+        <div class="id">
+          <p class="name">בועז חממי | עורך דין</p>
+          <p class="name_en">Boaz Hamami | Attorney at Law</p>
+          <p class="sub">אזור</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <a class="btn" href="tel:+972506278190">📞 חיוג: <span class="ltr">050-6278190</span></a>
+        <a class="btn secondary" href="mailto:law@hamamiboaz.co.il">✉️ מייל: <span class="ltr">law@hamamiboaz.co.il</span></a>
+        <a class="btn secondary" href="boaz-hamami.vcf" download>💾 שמירה לאנשי קשר</a>
+        <a class="btn secondary" href="https://wa.me/972506278190">💬 WhatsApp</a>
+      </div>
+
+      <div class="row">
+        <p class="label">כתובת</p>
+        <p class="value">השיקמה 2, אזור, בניין אפרידר, 5804542</p>
+        <div class="grid" style="margin-top:12px">
+          <a class="btn secondary" href="https://waze.com/ul?q=%D7%94%D7%A9%D7%99%D7%A7%D7%9E%D7%94%202%20%D7%90%D7%96%D7%95%D7%A8&navigate=yes">🧭 ניווט ב‑Waze</a>
+          <a class="btn secondary" href="https://www.google.com/maps/search/?api=1&query=%D7%94%D7%A9%D7%99%D7%A7%D7%9E%D7%94%202%20%D7%90%D7%96%D7%95%D7%A8">🗺️ Google Maps</a>
+        </div>
+      </div>
+
+      <div class="footer">© Boaz Hamami – Attorney at Law</div>
+    </div>
+  </div>
+</body>
+</html>
